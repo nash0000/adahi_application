@@ -1,5 +1,6 @@
 import 'package:adahi_application/models/user_model.dart';
-import 'package:adahi_application/screens/home_screen/home_screen.dart';
+
+import 'package:adahi_application/screens/home_screens/home_screens.dart';
 import 'package:adahi_application/screens/login_screen/login_cubit/login_cubit.dart';
 import 'package:adahi_application/screens/login_screen/login_cubit/login_states.dart';
 import 'package:adahi_application/screens/welcome_screen/welcome_screen.dart';
@@ -33,7 +34,7 @@ class LoginScreen extends StatelessWidget {
               Navigator.pop(context);
               navigateAndFinish(
                 context,
-                HomeScreen(),
+                HomeScreens(),
               );
               showToast(
                 massage: 'created',
@@ -154,7 +155,7 @@ class LoginScreen extends StatelessWidget {
           color: ToastColors.ERROR,
         );
       } else {
-        navigateTo(context, HomeScreen());
+        navigateTo(context, HomeScreens());
       }
     }
   }
