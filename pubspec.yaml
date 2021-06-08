@@ -1,0 +1,47 @@
+name: adahi_application
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # design
+  cupertino_icons: ^1.0.2
+
+  # database
+  firebase_core: ^1.1.0
+  firebase_auth: ^1.1.2
+  cloud_firestore: ^1.0.7
+  firebase_storage: ^8.0.5
+
+  # state management
+  flutter_bloc: ^7.0.1
+
+  conditional_builder: ^1.0.2
+  fluttertoast: ^8.0.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.8.1"
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/sheep.jpeg"
+
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
