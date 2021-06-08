@@ -151,9 +151,9 @@ class SignUpScreen extends StatelessWidget {
                             navigateTo(
                                 context,
                                 LoginScreen(
-                                    // email: emailController.text.trim(),
-                                    // password: passwordController.text.trim(),
-                                    ));
+                                  email: emailController.text.trim(),
+                                  password: passwordController.text.trim(),
+                                ));
                           },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
